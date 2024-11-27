@@ -1,0 +1,41 @@
+.main-senora {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: 
+    linear-gradient(rgb(255, 208, 0), rgb(255, 217, 0)); /* Lighter yellow and less transparent */
+    background-blend-mode: overlay; /* Blend color and image */
+    position: relative;
+
+    .main-image {
+        background-image: url('../../images/main.png');
+        background-size: cover; /* Cover the entire div */
+        background-position: center; /* Center the image */
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        opacity: 0.2;
+    }
+
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 50px;
+
+        h2 {
+            max-width: 52%;
+            text-align: center;
+            font-size: 2.5rem;
+        }
+
+        h1 {
+            color: black;
+            font-size: 3rem;
+        }
+    }
+
+}

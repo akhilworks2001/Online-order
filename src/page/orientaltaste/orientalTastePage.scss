@@ -1,0 +1,61 @@
+.main-oriental {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    padding-top: 12%;
+    padding-bottom: 5%;
+
+    .main-img {
+        margin-top: 34%;
+        rotate: 90deg;
+        position: absolute;
+        width: 75%;
+        left: 1;
+    }
+
+
+    .main-block {
+        display: flex;
+        justify-content: space-between;
+        gap: 15%;
+        margin: 0% 15%;
+        z-index: 5;
+        
+        img {
+            border-radius: 100%;
+            width: 42%;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 7%;
+
+            h1 {
+                font-size: 4rem;
+                color: rgb(255, 194, 0);
+            }
+    
+            p {
+                font-size: 1.5rem;
+                color: white;
+            }
+
+            button {
+                max-width: 50%;
+                background-color: rgb(255, 194, 0);
+                border: none;
+                font-size: 1.2rem;
+                padding: 2% 1%;
+                border-radius: 5px;
+                font-weight: bold;
+            }
+        }
+        
+    }
+
+
+}

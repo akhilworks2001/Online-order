@@ -1,0 +1,210 @@
+$primary-color: #333;
+$text-color: #fff;
+$highlight-color: #f39c12;
+
+
+.main {
+    height: 100vh;
+    background-color: rgb(51, 51, 51);
+    overflow: hidden;
+    position: relative;
+
+    .main-img {
+        position: absolute;
+        left: 0;
+        height: 100%;
+    };
+    
+    .design-img {
+        position: absolute;
+        height: 100%;
+        z-index: 1;
+        top: -6%;
+        height: 106%;
+        left: 26%;
+        overflow: hidden;
+    }
+
+    .veg-img-1 {
+        position: absolute;
+        z-index: 4;
+        height: 6%;
+        left: 43%;
+        top: 15%;
+    }
+
+    .veg-img-2 {
+        position: absolute;
+        z-index: 4;
+        height: 5%;
+        right: 12%;
+        top: 40%
+    }
+
+    .veg-img-3 {
+        position: absolute;
+        z-index: 4;
+        height: 5%;
+        left: 42%;
+        bottom: 14%
+    }
+
+    .veg-img-4 {
+        position: absolute;
+        z-index: 4;
+        height: 5%;
+        right: 28%;
+        bottom: 12%;
+    }
+
+    .capcicum-img {
+        position: absolute;
+        z-index: 4;
+        height: 15%;
+        right: 17%;
+        top: 15%;
+    }
+
+    .onion-img {
+        position: absolute;
+        z-index: 4;
+        height: 15%;
+        right: 9%;
+        bottom: 22%;
+    }
+
+    .tomato-img {
+        position: absolute;
+        z-index: 4;
+        height: 15%;
+        right: 39%;
+        bottom: 6%;
+    }
+    
+    .corainder-img {
+        position: absolute;
+        z-index: 4;
+        height: 18%;
+        left: 32%;
+        top: 40%;
+    }
+
+    .garlic-img {
+        position: absolute;
+        z-index: 4;
+        height: 6%;
+        right: 16%;
+        bottom: 5%
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        color: $text-color;
+        position: relative;
+        z-index: 10;
+        height: 15%;
+        margin: 0% 2%;
+
+        .logo {
+            height: 70%;
+        }
+
+        .menu {
+            list-style: none;
+            display: flex;
+            gap: 58px;
+            margin: 0;
+            padding: 0;
+
+            li {
+                a {
+                    color: rgb(255, 194, 0);
+                    text-decoration: none;
+                    font-size: 1.4rem;
+                }
+            }
+        }
+
+        .search {
+            font-size: 2rem;
+            cursor: pointer;
+            margin: 0 0 0 0;
+
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: $text-color;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        // Responsive Styles
+
+
+        @media (max-width: 768px) {
+            .menu {
+                display: none;
+                flex-direction: column;
+                gap: 10px;
+                background-color: $primary-color;
+                position: absolute;
+                top: 50px;
+                right: 20px;
+                padding: 10px;
+                border-radius: 5px;
+                z-index: 1000;
+
+                
+
+                &.show {
+                    display: flex;
+                }
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+        }
+    }
+
+    .main-heading {
+        z-index: 5;
+        right: 16%;
+        position: absolute;
+        top: 22%;
+        width: 42%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin: 4% 0%;
+
+        
+        .heading {
+            color: rgb(255, 194, 0);
+            font-size: 5rem;
+            margin-bottom: 2%;
+        }
+
+        .about {
+            color: white;
+            margin-bottom: 3%;
+            font-size: 2rem;
+        }
+
+        .order-btn {
+            color: black;
+            background-color: rgb(255, 194, 0);
+            width: 30%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            border-radius: 8px;
+        }
+    }
+    
+};

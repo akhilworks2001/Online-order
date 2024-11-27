@@ -1,0 +1,51 @@
+.main-bestseller {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 9%;
+
+    .main-title {
+        margin-bottom: 4%;
+        font-size: 2.7rem;
+    }
+
+    .main-about {
+        font-size: 1.5rem;
+        max-width: 60%;
+        text-align: center;
+        margin-bottom: 2%;
+    }
+
+    .main-cards {
+        display: flex;
+        margin: 2% 13% 10% 13%;
+        justify-content: center;
+        align-items: center;
+        gap: 10%;
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+
+            img {
+                border-radius: 100%;
+                width: 80%;
+            }
+
+            h3 {
+                text-align: center;
+            }
+
+            p {
+                text-align: center;
+            }
+
+        }
+
+    }
+
+}

@@ -1,0 +1,60 @@
+.main-chickengrill {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3% 0 4% 0;
+    margin-bottom: 10%;
+
+    .main-img{
+        rotate: 280deg;
+        width: 70%;
+        position: absolute;
+        margin-bottom: 25%
+    }
+
+    .main-block {
+        display: flex;
+        justify-content: space-between;
+        gap: 13%;
+        margin: 0% 15%;
+        z-index: 5;
+
+        div {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 7%;
+
+            h1 {
+                font-size: 4rem;
+                color: rgb(255, 194, 0);
+            }
+
+            p {
+                font-size: 1.5rem;
+                color: white;
+            }
+
+            button {
+                max-width: 50%;
+                background-color: rgb(255, 194, 0);
+                border: none;
+                font-size: 1.2rem;
+                padding: 2% 1%;
+                border-radius: 5px;
+                font-weight: bold;
+            }
+
+        }
+
+        img {
+            border-radius: 100%;
+            width: 80%;
+            margin-top: 5%;
+        }
+
+    }
+
+}
