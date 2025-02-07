@@ -8,10 +8,10 @@ import './about.scss';
 
 export default function About() {
   return (
-    <div className="main-about">
+    <div className="main-about-sec">
 
         <div className="title-section">
-            <h1>TITLE HERE</h1>
+            <h2>TITLE HERE</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Incidunt eum veritatis sequi vero voluptatem soluta 
@@ -19,16 +19,15 @@ export default function About() {
                 cupiditate, earum sit!
             </p>
             <div>
-                <FontAwesomeIcon icon={faInstagram} />
-                <FontAwesomeIcon icon={faFacebook} />
-                <FontAwesomeIcon icon={faTwitter} />
-                <FontAwesomeIcon icon={faWhatsapp}/>
+                <FontAwesomeIcon className="icon" icon={faInstagram} />
+                <FontAwesomeIcon className="icon" icon={faFacebook} />
+                <FontAwesomeIcon className="icon" icon={faTwitter} />
+                <FontAwesomeIcon className="icon" icon={faWhatsapp}/>
             </div>
         </div>
 
-        <div className="about-section">
             <div className="list-section">
-                <h1>ABOUT</h1>
+                <h2>ABOUT</h2>
                 <ul>
                     <li>History</li>
                     <li>Our Team</li>
@@ -39,7 +38,7 @@ export default function About() {
             </div>
 
             <div className="list-section">
-                <h1>SERVICES</h1>
+                <h2>SERVICES</h2>
                 <ul>
                     <li>How to Order</li>
                     <li>Our Product</li>
@@ -50,14 +49,13 @@ export default function About() {
             </div>
 
             <div className="list-section">
-                <h1>OTHER</h1>
+                <h2>OTHER</h2>
                 <ul>
                     <li>Contact Us</li>
                     <li>Help</li>
                     <li>Privacy</li>
                 </ul>
             </div>
-        </div>
 
     </div>
   )

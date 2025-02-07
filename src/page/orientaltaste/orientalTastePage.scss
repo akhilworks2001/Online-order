@@ -6,56 +6,132 @@
     position: relative;
     padding-top: 12%;
     padding-bottom: 5%;
+}
 
-    .main-img {
-        margin-top: 34%;
-        rotate: 90deg;
-        position: absolute;
-        width: 75%;
-        left: 1;
+.main-oriental .main-img {
+    margin-top: 34%;
+    rotate: 90deg;
+    position: absolute;
+    width: 75%;
+    left: 1;
+}
+
+.main-oriental .main-block {
+    display: flex;
+    justify-content: space-between;
+    gap: 15%;
+    margin: 0% 15%;
+    z-index: 5;
+}
+
+.main-oriental .main-block img {
+    border-radius: 100%;
+    width: 42%;
+}
+
+.main-oriental .main-block div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7%;
+}
+
+.main-oriental .main-block div h1 {
+    font-size: 4rem;
+    color: rgb(255, 194, 0);
+}
+
+.main-oriental .main-block div p {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.main-oriental .main-block div button {
+    max-width: 50%;
+    background-color: rgb(255, 194, 0);
+    border: none;
+    font-size: 1.2rem;
+    padding: 2% 1%;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Responsive for tablets */
+@media (max-width: 1024px) {
+    .main-oriental {
+        padding-top: 10%;
+        padding-bottom: 10%;
     }
-
-
-    .main-block {
-        display: flex;
-        justify-content: space-between;
-        gap: 15%;
-        margin: 0% 15%;
-        z-index: 5;
-        
-        img {
-            border-radius: 100%;
-            width: 42%;
-        }
-
-        div {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            gap: 7%;
-
-            h1 {
-                font-size: 4rem;
-                color: rgb(255, 194, 0);
-            }
     
-            p {
-                font-size: 1.5rem;
-                color: white;
-            }
-
-            button {
-                max-width: 50%;
-                background-color: rgb(255, 194, 0);
-                border: none;
-                font-size: 1.2rem;
-                padding: 2% 1%;
-                border-radius: 5px;
-                font-weight: bold;
-            }
-        }
-        
+    .main-oriental .main-img {
+        margin-top: 20%;
+        width: 80%;
     }
+    
+    .main-oriental .main-block {
+        flex-direction: column;
+        align-items: center;
+        gap: 10%;
+        margin: 0 10%;
+    }
+    
+    .main-oriental .main-block img {
+        width: 60%;
+    }
+    
+    .main-oriental .main-block div {
+        align-items: center;
+        text-align: center;
+    }
+    
+    .main-oriental .main-block div h1 {
+        font-size: 3rem;
+    }
+    
+    .main-oriental .main-block div p {
+        font-size: 1.2rem;
+    }
+}
 
-
+/* Responsive for mobile */
+@media (max-width: 768px) {
+    .main-oriental {
+        padding-top: 8%;
+        padding-bottom: 8%;
+    }
+    
+    .main-oriental .main-img {
+        margin-top: 15%;
+        width: 90%;
+    }
+    
+    .main-oriental .main-block {
+        flex-direction: column;
+        align-items: center;
+        gap: 8%;
+        margin: 0 5%;
+    }
+    
+    .main-oriental .main-block img {
+        width: 80%;
+    }
+    
+    .main-oriental .main-block div {
+        align-items: center;
+        text-align: center;
+    }
+    
+    .main-oriental .main-block div h1 {
+        font-size: 2.5rem;
+    }
+    
+    .main-oriental .main-block div p {
+        font-size: 1rem;
+    }
+    
+    .main-oriental .main-block div button {
+        font-size: 1rem;
+        padding: 3% 2%;
+        max-width: 70%;
+    }
 }

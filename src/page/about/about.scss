@@ -1,19 +1,106 @@
-.main-about {
+.main-about-sec {
     display: flex;
     justify-content: space-between;
+    background-color: rgb(51, 51, 51);
+    color: white;   
+    padding: 10% 6%; 
+
     .title-section {
-        width: 50%;
-        margin-left: 10%;
-    }
+        width: 35%;
+        font-size: 1.2rem;
 
-    .about-section {
-
-        display: flex;
-
-        .list-section {
-
+        h2 {
+            margin-bottom: 20px;
         }
 
+        p {
+            margin-bottom: 15px;
+        }
+
+        div {
+            display: flex; // Enables flexbox layout 
+            gap: 10px; // Adds spacing between icons 
+
+            .icon {
+                width: 20px; 
+                height: 20px; 
+                border-radius: 50%; 
+                background-color: white;
+                color: black;
+                padding: 6px;
+                display: flex; // Center the icon's content
+                align-items: center; // Center vertically
+                justify-content: center; // Center horizontally
+            }
+        }
     }
 
+    .list-section {
+        width: 60%; // Set width for the list section
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+
+            li {
+                margin-bottom: 10px;
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    // Media Queries for Responsiveness
+    @media (max-width: 768px) { // Tablet
+        flex-direction: column; // Stack sections vertically
+        align-items: center; // Center content
+
+        .title-section {
+            width: 100%; // Full width for mobile
+            text-align: center; // Center text for better appearance
+
+            div {
+                justify-content: center; // Center icons
+            }
+        }
+
+        .list-section {
+            width: 100%; // Full width for mobile
+            text-align: center; // Center text for better appearance
+
+            ul {
+                li {
+                    font-size: 1rem; // Reduce font size for better fit
+                }
+            }
+        }
+    }
+
+    @media (max-width: 480px) { // Mobile
+        padding: 8% 4%; // Adjust padding for smaller screens
+
+        .title-section {
+            h2 {
+                font-size: 1.5rem; // Increase heading size for readability
+            }
+
+            p {
+                font-size: 1rem; // Reduce paragraph size
+            }
+        }
+
+        .list-section {
+            h2 {
+                font-size: 1.5rem; // Increase heading size for readability
+            }
+
+            ul {
+                li {
+                    font-size: 0.9rem; // Further reduce font size for mobile
+                }
+            }
+        }
+    }
 }

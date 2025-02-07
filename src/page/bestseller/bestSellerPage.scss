@@ -49,3 +49,57 @@
     }
 
 }
+
+@media (max-width: 1024px) { /* Tablets */
+    .main-bestseller {
+        margin-top: 6%;
+
+        .main-title {
+            font-size: 2.3rem;
+        }
+
+        .main-about {
+            font-size: 1.3rem;
+            max-width: 75%;
+        }
+
+        .main-cards {
+            margin: 3% 5% 8% 5%;
+            gap: 6%;
+
+            .card {
+                img {
+                    width: 70%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) { /* Mobile */
+    .main-bestseller {
+        margin-top: 5%;
+
+        .main-title {
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .main-about {
+            font-size: 1.1rem;
+            max-width: 85%;
+        }
+
+        .main-cards {
+            flex-direction: column;
+            margin: 5% 8% 10% 8%;
+            gap: 20px;
+
+            .card {
+                img {
+                    width: 60%;
+                }
+            }
+        }
+    }
+}

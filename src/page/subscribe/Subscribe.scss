@@ -26,7 +26,7 @@
         position: absolute;
         height: 5%;
         right: 8%;
-        top: 30%
+        top: 30%;
     }
 
     .capcicum-img {
@@ -57,7 +57,7 @@
         right: 33%;
         bottom: 7%;
     }
-    
+
     .corainder-img {
         position: absolute;
         height: 18%;
@@ -69,7 +69,7 @@
         position: absolute;
         height: 3%;
         right: 14%;
-        bottom: 14%
+        bottom: 14%;
     }
 
     .main-heading {
@@ -80,7 +80,6 @@
         max-width: 48%;
         font-size: 1.4rem;
         text-align: center;
-
     }
 
     .subscribe-input {
@@ -104,7 +103,65 @@
             padding: 2% 5%;
             border-radius: 0px 4px 4px 0px;
         }
-
     }
 
+    // Media Queries for Responsiveness
+    @media (max-width: 768px) { // Tablet
+        .main-heading {
+            font-size: 3rem;
+        }
+
+        .main-about {
+            max-width: 70%;
+            font-size: 1.2rem;
+        }
+
+        .subscribe-input {
+            flex-direction: column;
+
+            input {
+                width: 100%;
+                margin-bottom: 10px; // Space between input and button
+            }
+
+            button {
+                width: 100%;
+            }
+        }
+
+        // Adjust image sizes for tablet
+        .veg-img-1, .veg-img-2, .veg-img-3, .capcicum-img, .capcicum-2-img, .onion-img, .tomato-img, .corainder-img, .garlic-img {
+            height: 8%; // Example size adjustment for tablet
+        }
+    }
+
+    @media (max-width: 480px) { // Mobile
+        .main-heading {
+            font-size: 2.5rem;
+        }
+
+        .main-about {
+            max-width: 90%;
+            font-size: 1rem;
+        }
+
+        .subscribe-input {
+            flex-direction: column;
+
+            input {
+                width: 100%;
+                padding: 5% 2%; // Adjust padding for mobile
+            }
+
+            button {
+                width: 100%;
+                padding: 3% 0; // Adjust padding for mobile
+            }
+        }
+
+        // Adjust image sizes for mobile
+        .veg-img-1, .veg-img-2, .veg-img-3, .capcicum-img, .capcicum-2-img, .onion-img, .tomato-img, .corainder-img, .garlic-img {
+            height: 12%; // Example size adjustment for mobile
+        }
+    }
 }
